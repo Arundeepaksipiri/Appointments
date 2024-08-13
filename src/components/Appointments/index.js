@@ -10,7 +10,7 @@ class Appointments extends Component {
     event.preventDefault()
     const {title, date} = this.state
     const consultant = {
-      id: {uuidv4},
+      id: uuidv4(),
       title,
       date,
       isStarred: false,
@@ -88,7 +88,7 @@ class Appointments extends Component {
                 id="dateId"
               />
               <br />
-              <button type="select" className="add-button">
+              <button type="submit" className="add-button">
                 Add
               </button>
             </form>
